@@ -1,12 +1,14 @@
 
 # Функция сравнения
-def comp_func(str_1, str_2):
+def comp_func(str_1: str, str_2: str):
     return str_1+str_2 > str_2+str_1
 
 # Основная функция
 def largest_number(n: int, numbers: str) -> str:
-    nums = [str(i) for i in nums.split()]
-    
+
+    nums = [str(i) for i in numbers.split()]
+    n = int(n)
+
     # Сортировка вставкой. 
     for i in range(1, n):
         key = nums[i]

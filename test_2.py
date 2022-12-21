@@ -6,7 +6,7 @@ from task_2_rough import largest_number as largest_number_rough
 rough = False
 
 if len(sys.argv) > 0:
-    rough = True if sys.argv[0]=='rough' else False
+    rough = True if sys.argv[1]=='rough' else False
 
 if (rough):
     print(largest_number_rough(input(), input()))
