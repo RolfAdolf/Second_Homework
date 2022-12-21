@@ -1,6 +1,7 @@
 # Вспомогательный  класс с переопределённой
 # функцией сравнения
 class newString(str):
+    
     def __lt__(self, other):
         return self+other < other+self
 

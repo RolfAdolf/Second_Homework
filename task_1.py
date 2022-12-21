@@ -4,14 +4,13 @@ def psp(n: int) -> str:
         s = ''
 
         # Вспомогательная рекурсивная функция.
-        # Перебор всевозможных правильных позиций скобок.
         def generate(left, right, s):
             if (left == 0) and (right == 0):
                 result.append(s)
             if left > 0:
-                generate(left-1, right, s + "(")
+                generate(left-1, right, s + '(')
             if right > left:
-                generate(left, right-1, s + ")")
+                generate(left, right-1, s + ')')
 
         generate(n, n, s)
 
